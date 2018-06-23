@@ -39,6 +39,7 @@ LICENSE file.
       <artifactId>core</artifactId>
       <version>${project.version}</version>
     </dependency>
+    <!-- Interset Disabled
     <dependency>
       <groupId>com.yahoo.ycsb</groupId>
       <artifactId>accumulo1.6-binding</artifactId>
@@ -69,11 +70,13 @@ LICENSE file.
       <artifactId>arangodb3-binding</artifactId>
       <version>${project.version}</version>
     </dependency>
+    -->
     <dependency>
       <groupId>com.yahoo.ycsb</groupId>
       <artifactId>asynchbase-binding</artifactId>
       <version>${project.version}</version>
     </dependency>
+    <!-- Interset Disabled
     <dependency>
       <groupId>com.yahoo.ycsb</groupId>
       <artifactId>cassandra-binding</artifactId>
@@ -109,6 +112,7 @@ LICENSE file.
       <artifactId>dynamodb-binding</artifactId>
       <version>${project.version}</version>
     </dependency>
+    -->
     <dependency>
       <groupId>com.yahoo.ycsb</groupId>
       <artifactId>elasticsearch-binding</artifactId>
@@ -119,6 +123,7 @@ LICENSE file.
       <artifactId>elasticsearch5-binding</artifactId>
       <version>${project.version}</version>
     </dependency>
+    <!-- Interset Disabled
     <dependency>
       <groupId>com.yahoo.ycsb</groupId>
       <artifactId>geode-binding</artifactId>
@@ -134,6 +139,7 @@ LICENSE file.
       <artifactId>googlebigtable-binding</artifactId>
       <version>${project.version}</version>
     </dependency>
+    -->
     <dependency>
       <groupId>com.yahoo.ycsb</groupId>
       <artifactId>hbase098-binding</artifactId>
@@ -142,6 +148,11 @@ LICENSE file.
     <dependency>
       <groupId>com.yahoo.ycsb</groupId>
       <artifactId>hbase10-binding</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.yahoo.ycsb</groupId>
+      <artifactId>hbase11-binding</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
@@ -159,6 +170,7 @@ LICENSE file.
       <artifactId>hbase20-binding</artifactId>
       <version>${project.version}</version>
     </dependency>
+    <!-- Interset Disabled
     <dependency>
       <groupId>com.yahoo.ycsb</groupId>
       <artifactId>hypertable-binding</artifactId>
@@ -249,6 +261,7 @@ LICENSE file.
       <artifactId>tarantool-binding</artifactId>
       <version>${project.version}</version>
     </dependency>
+    -->
 <!--
     <dependency>
       <groupId>com.yahoo.ycsb</groupId>

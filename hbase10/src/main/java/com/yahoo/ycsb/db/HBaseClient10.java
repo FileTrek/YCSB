@@ -129,16 +129,27 @@ public class HBaseClient10 extends com.yahoo.ycsb.DB {
       UserGroupInformation.setConfiguration(config);
     }
 
+    // START Changes by Interset
+    //System.out.println("HBase Config: " + config.toString());
+    //System.out.println("Properties: " + getProperties().toString());
+
     if ((getProperties().getProperty("principal")!=null)
         && (getProperties().getProperty("keytab")!=null)) {
       try {
-        UserGroupInformation.loginUserFromKeytab(getProperties().getProperty("principal"),
-              getProperties().getProperty("keytab"));
+        // Based off of Chen Yang's work here;
+        // https://community.hortonworks.com/articles/139167/measuring-hdp-performance-scale-and-reliability.html
+        UserGroupInformation ugi =
+            UserGroupInformation.loginUserFromKeytabAndReturnUGI(
+                getProperties().getProperty("principal"),
+                getProperties().getProperty("keytab")
+            );
+        UserGroupInformation.setLoginUser(ugi);
       } catch (IOException e) {
         System.err.println("Keytab file is not readable or not found");
         throw new DBException(e);
       }
     }
+    // END Changes by Interset
 
     String table = getProperties().getProperty(TABLENAME_PROPERTY, TABLENAME_PROPERTY_DEFAULT);
     try {
