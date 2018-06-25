@@ -84,6 +84,7 @@ LICENSE file.
     <googlebigtable.version>1.3.0</googlebigtable.version>
     <hbase098.version>0.98.14-hadoop2</hbase098.version>
     <hbase10.version>1.0.2</hbase10.version>
+    <hbase11.version>1.1.2</hbase11.version>
     <hbase12.version>1.2.5</hbase12.version>
     <hbase14.version>1.4.2</hbase14.version>
     <hbase20.version>2.0.0</hbase20.version>
@@ -113,13 +114,16 @@ LICENSE file.
     <module>binding-parent</module>
     <module>distribution</module>
     <!-- all the datastore bindings, lex sorted please -->
+    <!-- Interset Disabled
     <module>accumulo1.6</module>
     <module>accumulo1.7</module>
     <module>accumulo1.8</module>
     <module>aerospike</module>
     <module>arangodb</module>
     <module>arangodb3</module>
+    -->
     <module>asynchbase</module>
+    <!-- Interset Disabled
     <module>azuredocumentdb</module>
     <module>azuretablestorage</module>
     <module>cassandra</module>
@@ -127,21 +131,28 @@ LICENSE file.
     <module>couchbase</module>
     <module>couchbase2</module>
     <module>dynamodb</module>
+    -->
     <module>elasticsearch</module>
     <module>elasticsearch5</module>
+    <!-- Interset Disabled
     <module>geode</module>
     <module>googlebigtable</module>
     <module>googledatastore</module>
+    -->
     <module>hbase098</module>
     <module>hbase10</module>
+    <module>hbase11</module>
     <module>hbase12</module>
     <module>hbase14</module>
     <module>hbase20</module>
+    <!-- Interset Disabled
     <module>hypertable</module>
     <module>infinispan</module>
     <module>jdbc</module>
     <module>kudu</module>
+    -->
     <!--<module>mapkeeper</module>-->
+    <!-- Interset Disabled
     <module>maprdb</module>
     <module>maprjsondb</module>
     <module>memcached</module>
@@ -156,6 +167,7 @@ LICENSE file.
     <module>solr</module>
     <module>solr6</module>
     <module>tarantool</module>
+    -->
     <!--<module>voldemort</module>-->
   </modules>
 

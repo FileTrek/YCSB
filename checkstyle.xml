@@ -133,8 +133,8 @@ LICENSE file.
         <module name="ParenPad"/>
         <module name="TypecastParenPad"/>
         <module name="WhitespaceAfter">
-	    	<property name="tokens" value="COMMA, SEMI"/>
-		</module>
+          <property name="tokens" value="COMMA, SEMI"/>
+        </module>
 
 
         <!-- Modifier Checks                                    -->
